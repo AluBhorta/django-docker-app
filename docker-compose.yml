@@ -4,13 +4,10 @@ services:
   app:
     build:
       context: .
+    working_dir: /app/myapp
     ports:
       - "8000:8000"
     volumes:
       - ./app:/app
     command: >
-      sh -c "
-        cd myapp &&
-        python manage.py migrate &&
-        python manage.py runserver 0.0.0.0:8000
-      "
+      sh -c "python manage.py runserver 0.0.0.0:8000"
