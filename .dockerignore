@@ -1,0 +1,16 @@
+.git
+bundles
+
+dist/
+
+**/__pycache__/
+**/*.pyc
+.cache
+**/node_modules/
+
+*.log
+
+.env
+
+.idea
+.vscode/
